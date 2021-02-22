@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Form COVID-19</title>
+  </head>
+  <body>
+    <!--Navrbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary" id="navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <!--Agregamos un logo-->
+              <img src="img/lolis.png" alt="" width="35">
+          </a>
+          <!--Agregamos un boton para el resposive-->
+          <button class="navbar-toggler" 
+          type="button"  -toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          -expanded="false" 
+          aria-label="Toggle navigation">
+          
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <!--Creamos una lista para el menu-->
+                  <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">iniciar sesión</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-center  pt-3">
+      <div class="col-md-7">
+        <h1 class="display-4 text-center">Formulario</h1>
+        <hr class="bg-info">
+       
+        <p class="text-danger small pt-0 mt-0">* Todos los campos son obligatorios</p>
+        <!---->
+        <form >
+          <!--Nombre-->
+          <div class="row form-group">          
+            <label for="Nombre" class="col-form-label col-md-4">Nombre completo:</label>
+            <div class="col-md-5">
+              <input type="text" name="nombre" value="" id="nombre" class="form-control">
+            </div>
+          </div><!--Nombre-->
+
+          <!--Edad-->
+          <div class="row form-group pt-2">          
+            <label for="Edad" class="col-form-label col-md-4">Edad:</label>
+            <div class="col-md-2">
+              <input type="text" name="edad" value="" id="edad" class="form-control">
+            </div>
+          </div><!--Edad-->
+          <!--Sexo-->
+          <div class="row form-group">
+            <label for="" class="col-form-label col-md-4">Sexo:</label>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="genero" value="Mujer">
+                Mujer
+              </label>
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="genero" value="Hombre">
+                Hombre
+              </label>
+            </div>
+          </div><!--Sexo-->
+          <!--Pregunta 1.--->
+          <div class="row form-group">
+            <label for="" class="col-form-label col-md-8">1.-¿Como se ha sentido en esta cuarentena?</label>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="1.-" value="Mas Relajado">
+                Mas Relajado
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="1.-" value="Mas Estresado">
+                Mas Estresado
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="1.-" value="Sin cambios">
+                Sin cambios
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="1.-" value="Otro">
+                Otros
+              </label>
+            </div>
+          </div><!--Pregunta 1-->
+          <!--Pregunta 2-->
+          <div class="row form-group">
+            <label for="" class="col-form-label col-md-12">2.-¿Usted cree que la cuarentena obligatoria para toda la poblacion, evitará el contagio de coronavirus en su hogar?</label>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="2.-" value="Si">
+                Si
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="2.-" value="No">
+                No
+              </label>
+            </div>
+          </div><!--Pregunta 2-->
+          
+
+          <!--Pregunta 3-->
+          <div class="row form-group">
+            <label for="" class="col-form-label col-md-12">3.-¿Qué insumo de prevención, limpieza y desinfección le hace falta en casa?</label>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="3.-" value="Si">
+                Alcohol
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="3.-" value="No">
+                Gel antimaterial
+              </label>
+            </div>
+
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="3.-" value="No">
+                Cubrebocas
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="3.-" value="No">
+                Ninguno de los anteriores
+              </label>
+            </div>
+          </div><!--Pregunta 3-->
+
+           <!--Pregunta 4-->
+           <div class="row form-group">
+            <label for="" class="col-form-label col-md-12">4.-¿Conoce o ha estado en contacto con alguien que padece de Covid-19?</label>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="4.-" value="Si">
+                Si
+              </label>
+            </div>
+            <div class=" col-md-7 form-check form-check-inline">
+              <label for="" class="form-check-label">
+                <input type="radio" class="form-check-imput" name="4.-" value="No">
+                No
+              </label>
+            </div>
+          </div><!--Pregunta 4-->
+
+
+            <!--Pregunta 5-->
+          <div class="row form-group ">
+            <label for="" class="col-form-label col-md-12">5.-¿Con que servicios cuenta en su hogar?</label>
+            <div class="col-md-8">
+              <!--Campo-->
+              <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="HTML" name="Curso[]">
+                <label class="form-check-label" for="inlineCheckbox1">Luz eléctrica</label>
+              </div><!--Campo-->
+               <!--Campo-->
+               <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="CSS">
+                <label class="form-check-label" for="inlineCheckbox1">Gas</label>
+              </div><!--Campo-->
+               <!--Campo-->
+               <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="PHP">
+                <label class="form-check-label" for="inlineCheckbox1">Conexion a internet</label>
+              </div><!--Campo-->
+              <!--Campo-->
+              <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="PHP">
+                <label class="form-check-label" for="inlineCheckbox1">Agua potable</label>
+              </div><!--Campo-->
+            </div>
+          </div><!--Pregunta 5-->
+
+          <!--Pregunta 6-->
+          <div class="row form-group pt-2">
+            <label for="color" class="col-form-label col-md-12">6.-¿Usted trabaja desde casa?</label>
+            <div class="col-md-6">
+                <select class="form-control" name="color" id="color">
+                  <option value="Verde">Si, trabajo desde casa</option>
+                  <option value="Azul">No, tengo que trasladarme al trabajo</option>
+                  <option value="Rojo">No tengo trabajo</option>
+                </select>
+            </div>
+        </div><!--Pregunta 6-->
+          <!--Pregunta 7-->
+        <div class="row form-group">
+          <label for="mensaje" class="col-form-label col-md-12">7.-¿Tiene algún comentario que quiera compartir?</label>
+          <div class="col-md-8">
+            <textarea name="Cometario" class="form-control" id="Cometario"  rows="4"></textarea>
+          </div>
+        </div><!--Pregunta 7-->
+
+          
+          
+
+
+        
+
+          
+          <button type="submit" class="btn btn-info center"> Enviar</button>
+
+          
+        <hr class="bg-info">
+        <h1 class="display-4 text-center">Gracias por su participación</h1>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
